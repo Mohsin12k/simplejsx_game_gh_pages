@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* custom classes */
+
+.custom_round_circle {
+    background-image: conic-gradient(cyan 0deg, #4b5563 0deg);
+}
+
+.custom_lg_txt {
+    font-size: clamp(5px, min(2vw, 3.5vh), 18px);
+}
+
+.custom_sm_txt {
+    font-size: clamp(5px, min(2vw, 3.5vh), 14px);
+}
+
+.custom_section_w {
+    width: clamp(30px, min(50vw, 60vh), 350px);
+}
+
+.custom_section_h {
+    height: clamp(30px, min(50vw, 60vh), 350px);
+}
+
+.custom_width {
+    width: clamp(30px, max(50vw, 60vh), 250px);
+}
+
+.custom_height {
+    height: clamp(30px, max(50vw, 60vh), 250px);
+}
+
+.custom_car_w {
+    width: clamp(50px, min(20vw, 30vh), 200px);
+}
+
+/* custom media query */
+
+@media screen and (max-width: 860px) {
+    .custom_width {
+           width:clamp(30px, min(30vw, 50vh), 250px);
+        }
+
+    .custom_height {
+            height: clamp(30px, min(30vw, 50vh), 250px);
+        }
+}
